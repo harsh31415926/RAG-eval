@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
     retriever = build_retriever()
 
-    results = retriever.invoke("what is difference between model evals and application evals")
+    results = retriever.invoke("what is regression testing?")
     
     for r in results:
         print(f"[Session {r.metadata['session']}] {r.page_content[:150]}...\n")
